@@ -8,6 +8,8 @@ let persistence = try! Persistence()
 let router = Router()
 Routes(persistence: persistence).configure(using: router)
 
+print("Starting Fcats...")
+
 HeliumLogger.use(.warning)
 Kitura.addHTTPServer(onPort: 8080, with: router)
 Kitura.run()

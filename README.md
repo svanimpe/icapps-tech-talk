@@ -23,6 +23,8 @@ The following sections contain notes and instructions that can help you recreate
 
 This example covers project initialization, basic routing and rendering [Stencil](https://github.com/stencilproject/Stencil) templates.
 
+> **Note:** If you don't want to recreate this example and just want to run it, execute `swift run` from the project's root directory.
+
 To recreate this example, first initialize an empty project using the Swift Package Manager:
 
 ```
@@ -48,6 +50,8 @@ Don't forget to copy over **Views/index.stencil** as it is needed for one of the
 ## Example 2: Fcats
 
 This example is a step up from the previous one. Its goal is to show how you can architect a more complex app.
+
+> **Note:** If you don't want to recreate this example and just want to run it, execute `swift run` from the project's root directory.
 
 The app is split into modules to allow for automated testing:
 
@@ -98,6 +102,8 @@ pod 'KituraKit', :git => 'https://github.com/IBM-Swift/KituraKit.git', :branch =
 ```
 
 KituraKit's API mirrors Kitura's codable routing API, making it easy to call your back-end from an iOS app. Its goal is to promote code reuse between front-end and back-end. That's not quite the case yet, as we're waiting for Xcode to support the Swift Package Manager.
+
+> **Note:** If you don't want to recreate this example and just want to run it, execute `pod install` from the project's root directory and then open the generated Xcode workspace.
 
 ## Useful links
 
