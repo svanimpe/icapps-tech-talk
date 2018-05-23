@@ -1,0 +1,17 @@
+<!--
+    fact.stencil is a child template of base.stencil.
+    It only needs to fill in the title and body blocks.
+-->
+{% extends "base.stencil" %}
+
+{% block title %}{{ name }}{% endblock %}
+
+{% block body %}
+    <div class="jumbotron text-center">
+        <p class="lead">{{ fact }}</p>
+    </div>
+    <p class="text-center">
+        <a href="/" style="margin-right: 100px"><i class="fa fa-chevron-left fa-3x"></i></a>
+        <a href="/races/{{ id }}"><i class="fa fa-repeat fa-3x"></i></a>
+    </p>
+{% endblock %}

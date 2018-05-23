@@ -1,0 +1,20 @@
+<!--
+    index.stencil is a child template of base.stencil.
+    It only needs to fill in the title and body blocks.
+-->
+{% extends "base.stencil" %}
+
+{% block title %}Your source of cat facts{% endblock %}
+
+{% block body %}
+    <h1 class="display-4">Fcats</h1>
+    <p class="lead">Your source of cat facts</p>
+    <div class="list-group list-group-flush">
+        {% for race in races %}
+            <a href="/races/{{ race.id }}" class="list-group-item list-group-item-action border-0 pl-0">
+                <img class="rounded mr-3" width="150" src="/public/img/{{ race.image }}">
+                {{ race.name }}
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

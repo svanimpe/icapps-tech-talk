@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+    This is an example of template inheritance.
+    base.stencil is a parent template and contains blocks that are placeholders, to be filled in by child templates.
+-->
+<html lang="en">
+<head>
+    <title>Fcats - {% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Steven Van Impe">
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-3">
+        {% block body %}{% endblock %}
+    </div>
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/popper.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+</body>
+</html>
