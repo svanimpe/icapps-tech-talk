@@ -59,8 +59,6 @@ The app is split into modules to allow for automated testing:
 - **Fcats** is a library containing all of the app's functionality.
 - **FcatsTests** is a test target for **Fcats**. An example end-to-end test is included.
 
-> **Note**: This app's architecture is a simplified version of the architecture for [Around The Table](https://github.com/svanimpe/around-the-table), which will be released later this year.
-
 To recreate this project, start by initializing an empty project:
 
 ```
@@ -116,7 +114,3 @@ KituraKit's API mirrors Kitura's codable routing API, making it easy to call you
 - [KituraKit](https://github.com/IBM-Swift/KituraKit) is an iOS client library for Kitura.
 - [Swift Blog](https://github.com/svanimpe/swift-blog) is an example project to help you get started with Kitura and deploy your projects to IBM Cloud.
 - [Server-side Swift](https://www.serversideswift.info) is an upcoming conference focused exclusively on server-side Swift.
-
-If you have any questions, please find me on Twitter as [@svanimpe](https://twitter.com/svanimpe).
-
-If you enjoyed the talk and want to support my open source work, please consider [becoming a patron](https://www.patreon.com/svanimpe).
